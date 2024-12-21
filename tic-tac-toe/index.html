@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="main-menu">
+        <div class="title-container">
+            <h1 class="game-title">The Ultimate Tic-Tac-Toe</h1>
+        </div>
+        <form class="input-container">
+            <input type="text" class="player1" placeholder="Player 1 Name" required>
+            <input type="text" class="player2" placeholder="Player 2 Name" required>
+            <div class="btn-container">
+                <input type="submit" class="start-btn"></input>
+            </div>
+        </form>
+    </div>
+
+    <div class="board-container">
+        <div class="status">
+            <div class="player-turn"></div>
+        </div>
+        <div class="game-board"></div>
+        <div class="btn-container">
+            <button class="restart-btn">Restart?</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

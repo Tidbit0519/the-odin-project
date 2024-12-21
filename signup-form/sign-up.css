@@ -1,0 +1,211 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+:root{
+    --color: #00c3e1;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "norse";
+    src: url("Norse-Bold.woff");
+}
+
+@font-face {
+    font-family: "open-sans";
+    src: url("OpenSans-Regular.woff");
+}
+
+@font-face {
+    font-family: "open-sans-bold";
+    src: url("OpenSans-Bold.woff");
+}
+
+body {
+    font: 0.8rem "open-sans";
+    display: flex;
+    color: rgb(220, 220, 220);
+    box-sizing: border-box;
+}
+
+.picture{
+    background-image: url("space.jpg");
+    background-position: center;
+    background-size: 30vw 100vh;
+    background-repeat: no-repeat;
+    width: 30vw;
+    height: 100vh;
+}
+
+
+.logo{
+    display: flex;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 20vh;
+    gap: 1vw;
+    padding: 15px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    color: white;
+    font: 50px "norse";
+    letter-spacing: 2px;
+}
+
+.odin {
+    height: 10vh;
+}
+
+/* right side */
+
+.right{
+    width: 70vw;
+    background-color: rgb(25, 50, 70);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    letter-spacing: 0.5px;
+}
+
+.left{
+    padding-left: 3vw;
+}
+
+.dummy-text{
+    font: 1rem "open-sans-bold";
+    width: 70%;
+    margin-top: 20px;
+}
+
+.remote-text{
+    margin: 30px 0 60px;
+}
+
+em {
+    font-style: italic;
+}
+
+
+/* form */
+
+.form{
+    background-color: rgb(30, 60, 85);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 10px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.input{
+    display: flex;
+    flex-flow: column wrap;
+    width: 35%;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    opacity: 75%;
+    margin-right: 20px;
+}
+
+label {
+    letter-spacing: 1px;
+}
+
+.form-title{
+    width: 100%;
+    font: 1rem "open-sans-bold";
+}
+
+input{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(77, 77, 77);
+    height: 30px;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid var(--color, 0.5);
+}
+
+button{
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--color);
+    font: 1rem "open-sans-bold";
+    border: 2px solid var(--color);
+    padding: 10px 40px;
+    margin: 40px 0;
+}
+
+button:hover{
+    background-color: var(--color);
+    color: black;
+    
+}
+
+.log-in{
+    display: flex;
+    gap: 5px;
+}
+
+a{
+    color: var(--color);
+}
+
+a:hover{
+    color: white;
+}

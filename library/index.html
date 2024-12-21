@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <script type="text/javascript" src="./index.js"></script>
+    <title>Jason's Library</title>
+</head>
+<body id="body">
+    <div class="overlay" id="overlay"></div>
+    <header>
+        <h1>Welcome to Jason's Library!</h1></header>
+    <main class="main-content" id="main-content">
+        <button class="btn-add" id="btn-add">+ New Book</button>
+        <div class="form-popup" id="form-popup">
+            <form class="form-container">
+                <h1>New Book</h1>
+                <input type="text" placeholder="Book's name" name="book-name" required>
+                <input type="text" placeholder="Author's name" name="author" required>
+                <input type="number" placeholder="Number of pages" name="pages" required>
+                <div class="checkbox-container" id="checkbox-container">
+                    <label>Have you read it?</label>
+                    <input type="checkbox" name="read">
+                </div>
+                <button type="submit" class="btn-submit-new-book" id="btn-submit-new-book">Submit</button>
+            </form>
+        </div>
+        <div class="library-grid" id="library-grid">
+            <div class="book-card" id ="book-card">
+                <div class="book-info">
+                    <h2 class="book-title" id="book-title">Title:  </h2>
+                    <h3 class="book-author" id="book-author">Author: </h3>
+                    <p class="book-pages" id="book-pages">Pages:  </p>
+                    <p class="book-status" id="status">Read:   </p>
+                </div>
+                <div class="action-btns" id="action-btns">
+                    <button class="read-btn" id="toggle-read">Read</button>
+                    <button class="remove-btn" id="remove-btn">Remove</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="footer">
+        <p>Copyright © 2023 Tidbit0519</p>
+    </div>
+</body>
+</html>

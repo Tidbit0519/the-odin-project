@@ -1,0 +1,245 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+	font-size: 24px;
+	font-family: 'Noto Sans', sans-serif;
+	background-color: #B7B7A4;
+}
+
+/* Header */
+header {
+	box-shadow: 0 3px 5px gray;
+	padding: 30px;
+	background-color: #6B705C;
+	color: white;
+}
+
+/* Main */
+main {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+  	min-height: 89vh;
+	padding: 30px;
+	gap: 5rem;
+	margin-left: 10rem;
+	margin-right: 10rem;
+}
+
+.library-grid {
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(5, 1fr);
+	gap: 10px;
+}
+
+.book-card {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	border: 1px solid #6B705C;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: #6B705C;
+	font-size: 16px;
+	color: white;
+	box-shadow: 0 0 10px #6B705C;
+}
+
+.book-info {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	gap: 10px;
+}
+
+.action-btns {
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+	padding: 10px;
+}
+
+.read-btn, .remove-btn {
+	width: 65px;
+	height: 20px;
+	border: none;
+	border-radius: 5px;
+	color: white;
+}
+
+.read-btn:hover, .remove-btn:hover {
+	box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.read-btn:active, .remove-btn:active {
+	transform: translateY(2px);
+	filter: brightness(90%)
+}
+
+.read-btn {
+	background-color: #A5A58D;
+}
+
+.remove-btn {
+	background-color: #CB997E;
+}
+
+.btn-add {
+	width: 150px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	background-color: #B7B7A4;
+	font-size: 20px;
+	color: #54584a;
+	height: 50px;
+}
+
+.btn-add:hover {
+	color: white;
+	background-color: #6B705C;
+	border-radius: 5px;
+	box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-add:active {
+	transform: translateY(2px);
+	filter: brightness(90%)
+}
+
+/* Form */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust the alpha value to control the darkness */
+    z-index: 2; /* Ensure the overlay is on top of other elements */
+}
+
+.form-popup {
+	position: absolute;
+	left: 40vw;
+  	display: none;
+	z-index: 3;
+    margin: auto;
+	width: 360px;
+	height: auto;
+	background-color: #B7B7A4;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px #6B705C;
+	color: #54584a;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+}
+
+.form-container h1 {
+	font-size: 20px;
+}
+
+.form-container label {
+	font-size: 16px;
+	letter-spacing: 0.5px;
+}
+
+.checkbox-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+input {
+	border: none;
+	border-radius: 5px;
+	height: 30px;
+	padding: 10px;
+}
+
+label {
+    letter-spacing: 1px;
+}
+
+.btn-submit-new-book {
+	width: 100px;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	background-color: #A5A58D;
+	font-size: 16px;
+	margin-left: 7rem;
+}
+
+.btn-submit-new-book:hover {
+	box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-submit-new-book:active {
+	transform: translateY(2px);
+	filter: brightness(90%)
+}
+
+/* Footer */
+.footer {
+	margin-top: auto;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
